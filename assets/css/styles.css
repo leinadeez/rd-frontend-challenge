@@ -10,6 +10,10 @@
 }
 html, body, #app {
     height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
 }
 body, input, button {
     font: 14px 'Roboto', sans-serif;
@@ -19,6 +23,9 @@ a {
 }
 ul {
     list-style: none;
+    width: 600px;
+    display:flex;
+    flex-wrap: wrap;
 }
 button {
     cursor: pointer;
@@ -33,3 +40,71 @@ body {
 /**
 * YOUR CODE HERE
 */
+
+.logo {
+    width:40px;
+    height:40px;
+}
+
+.login {
+    width:400px;
+    background-color:#ddd;
+    margin-top: 20px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.inputField {
+    background-color: #d3d3d3;
+    line-height: 40px;
+    border: 0;
+    padding: 0 10px;
+    width:355px;
+    margin: 0px auto 10px;
+}
+
+.btnSubmit {
+    width: 355px;
+    line-height:40px;
+    border: 0;
+    background-color: #008429;
+    color:#fff;
+}
+.btnSubmit:hover {
+    background-color: #00A333
+}
+
+.btnSubmit:disabled {
+    background-color: #d1d1d1;
+}
+
+.dev {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    margin:5px;
+    border-radius: 5px;
+    flex: 1;
+}   
+.dev .avatar {
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    position:absolute;   
+    transition: all 200ms ease; 
+}
+.dev:hover .avatar {
+    transform: scale(2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dev a {
+    color: #000;
+    font-weight: bold;
+    line-height: 30px;
+}
+.dev a span {
+    margin-left:35px;
+}
